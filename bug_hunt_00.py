@@ -29,9 +29,28 @@ else:
         x = -1
         num_add = int(input("What number should I add to x to make it equal to 5?\n"))
         x += num_add    
+
 time.sleep(2)
 
 print("Thank you for helping me with x.  Next thing I need to do is multiply y and z together.\n")
 time.sleep(2)
 
-mult_operator = input("What is the correct operator for multiplication?\n")
+mult_operator = input("What is the correct operator for multiplication?  Type it and then press enter.\n")
+
+if mult_operator == "*":
+    print("Ok, you're smart.\n")
+    new_num = y * z
+else:
+    while mult_operator != "*":
+        print("What is so hard about this?  If you don't know it, look it up!\n")
+        mult_operator = input("What is the correct operator for multiplication?  Type is and then press enter.\n")
+
+print("Next, I am going to count to a random number between 1 and 100.\n")
+print("While I count, if the number is divisible by three I want to exit the loop!\n")
+
+for idx in range(10):
+    print(idx + random.randint(1, 3))
+    if idx % 2 == 0:
+        break
+    else:
+        time.sleep(1)            
