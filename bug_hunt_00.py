@@ -40,17 +40,33 @@ mult_operator = input("What is the correct operator for multiplication?  Type it
 if mult_operator == "*":
     print("Ok, you're smart.\n")
     new_num = y * z
+    print(f"y times z equals {new_num}.\n")
 else:
     while mult_operator != "*":
         print("What is so hard about this?  If you don't know it, look it up!\n")
         mult_operator = input("What is the correct operator for multiplication?  Type is and then press enter.\n")
 
-print("Next, I am going to count to a random number between 1 and 100.\n")
-print("While I count, if the number is divisible by three I want to exit the loop!\n")
+print("Next, I am going to count to a random number between 1 and 100.\n  If the number is divisible by two, print it on the screen.\n")
+num_even = 0
+num_odd = 0
 
-for idx in range(10):
-    print(idx + random.randint(1, 3))
+for idx in range(random.randint(1, 100)):
     if idx % 2 == 0:
-        break
+        print(f"{idx} is divisible by two!\n")
+        time.sleep(0.5)
+        num_even += 1
     else:
-        time.sleep(1)            
+        print(f"{idx} is not divisible by two!\n")
+        num_odd += 1
+        
+print(f"There were {num_even} even numbers in the range.\n")
+print(f"There were {num_odd} odd numbers in the range.\n")
+time.sleep(2)
+
+while z > 0:
+    print("The wheels on the bus go 'round and 'round.  The wheels on the bus go 'round and 'round, all through the town!\n")
+    print(f"z is {z}.\n")
+    time.sleep(0.5)
+    z += -1
+
+print(f"If this printed on the screen, you found and squashed all of the bugs!  The secret code is {x}{y + 1}{z + 2}.\n")
