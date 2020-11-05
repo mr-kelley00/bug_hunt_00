@@ -16,10 +16,10 @@ x = -1
 y = 0
 z = 1
 
-f"Right now, x is {x}, y is {y}, and z is {z}.\n"
+print(f"Right now, x is {x}, y is {y}, and z is {z}.\n")
 time.sleep(2)
 
-num_add = int(("What number should I add to x to make it equal to 5?\n")
+num_add = int(input("What number should I add to x to make it equal to 5?\n"))
 x ? num_add # You will need to add num_add to x.  
 
 if x != 5:
