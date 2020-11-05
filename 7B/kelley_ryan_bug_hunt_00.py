@@ -20,16 +20,16 @@ print(f"Right now, x is {x}, y is {y}, and z is {z}.\n")
 time.sleep(2)
 
 num_add = int(input("What number should I add to x to make it equal to 5?\n"))
-x ? num_add # You will need to add num_add to x.  
+x += num_add # You will need to add num_add to x.
 
-if x != 5:
-    Print("Ok, you can do basic addition.  That's good.\n")
-else
-    while x != 5
-        print(f"{variable} is NOT 5.  Can you not add?\n")
+if x == 5:
+    print("Ok, you can do basic addition.  That's good.\n")
+else: 
+    while x != 5: 
+        print(f"{x} is NOT 5.  Can you not add?\n")
         x = -1
         num_add = int(input("What number should I add to x to make it equal to 5?\n"))
-        x = num_add # You will need to add num_add to x again.      
+        x += num_add # You will need to add num_add to x again.      
 
 time.sleep(2)
 
@@ -38,18 +38,18 @@ time.sleep(2)
 
 mult_operator = input("What is the correct operator for multiplication?  Type it and then press enter.\n")
 
-if mult_operator ? "*": # Check to see if they ARE EQUAL.  
+if mult_operator == "*": # Check to see if they ARE EQUAL.  
     print("Ok, you're smart.\n")
-    new_num = y ? z # Make them multiply together. 
-    print("y times z equals {new_num}.\n") # Why won't the variable print?
-else
+    new_num = y * z # Make them multiply together. 
+    print(f"y times z equals {new_num}.\n") # Why won't the variable print?
+else: 
     while mult_operator != "*":
         print("What is so hard about this?  If you don't know it, look it up!\n")
-        mult_operator ? input("What is the correct operator for multiplication?  Type is and then press enter.\n") # Make mult_operator equal to the input() 
+        mult_operator = input("What is the correct operator for multiplication?  Type is and then press enter.\n") # Make mult_operator equal to the input() 
 
-print(Next, I am going to count to a random number between 1 and 100.\n  If the number is divisible by two, print it on the screen.\n)
-num_even = ? # Should start at zero. 
-num_odd = ? # Should start at zero. 
+print("Next, I am going to count to a random number between 1 and 100.\n  If the number is divisible by two, print it on the screen.\n")
+num_even = 0 # Should start at zero. 
+num_odd = 0 # Should start at zero. 
 
 for idx in range(rand_num):
     # % is called MODULUS.  It means to divide the first number by the second and give the REMAINDER as the answer. 
