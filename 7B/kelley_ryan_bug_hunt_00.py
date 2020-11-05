@@ -53,24 +53,24 @@ num_odd = 0 # Should start at zero.
 
 for idx in range(rand_num):
     # % is called MODULUS.  It means to divide the first number by the second and give the REMAINDER as the answer. 
-    if idx % 3 == 0: # Is this divisible by 2 or by 3?
+    if idx % 2 == 0: # Is this divisible by 2 or by 3?
         print(f"{idx} is divisible by two!\n")
         time.sleep(0.5)
-        num_even += -1 # Should I increase the even number count here?
+        num_even += 1 # Should I increase the even number count here?
     else:
         print(f"{idx} is not divisible by two!\n")
-        num_odd += -1 # # Should I increase the odd number count here?
+        num_odd += 1 # # Should I increase the odd number count here?
         
-print(fThere were {num_even} even numbers in the range.\n)
-print(f"There were {numodd} odd numbers in the range.\n")
+print(f"There were {num_even} even numbers in the range.\n")
+print(f"There were {num_odd} odd numbers in the range.\n")
 time.sleep(2)
 
 
 # This loop will currently run for EVER.  Fix it to stop.  Think about what z is equal to before the loop starts and how z is changed at the end of each loop. 
 while z > 0:
-    print"The wheels on the bus go 'round and 'round.  The wheels on the bus go 'round and 'round, all through the town!\n"
+    print("The wheels on the bus go 'round and 'round.  The wheels on the bus go 'round and 'round, all through the town!\n")
     print(f"z is {z}.\n")
     time.sleep(0.5)
     z += -1
 
-prin(f"If this printed on the screen, you found and squashed all of the bugs!  The secret code is {x}{y + 1}{z + 2}.\n"
+print(f"If this printed on the screen, you found and squashed all of the bugs!  The secret code is {x}{y + 1}{z + 2}.\n")
