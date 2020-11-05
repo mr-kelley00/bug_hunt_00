@@ -8,8 +8,8 @@ import time # What is missing?
 rand_num = random.randint(1, 100) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
 
 player_name = input("What is your name?  Please type your name and press enter.\n")
-printf"Welcome to the Bug Hunt #00 activity {plyr_name}!\n"
-.sleep(2)
+print(f"Welcome to the Bug Hunt #00 activity {player_name}!\n")
+time.sleep(2)
 
 # Declare and initalize x, y, and z. 
 x = -1
