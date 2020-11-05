@@ -5,7 +5,7 @@
 import random # What's wrong with this line? 
 import time # What is missing?
 
-= random.randint(1, 10) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
+rand_num = random.randint(1, 100) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
 
 player_name = input("What is your name?  Please type your name and press enter.\n")
 printf"Welcome to the Bug Hunt #00 activity {plyr_name}!\n"
