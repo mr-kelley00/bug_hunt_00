@@ -1,11 +1,11 @@
-# Bug Hunt 00 -- <Ryan Kelley> <2:06PM> <11/06/20> v0.0
+# Bug Hunt 00 -- <Ryan Kelley> <2:18PM> <11/06/20> v0.1
 # Your assignment is to read this code carefully and fix any Syntax Errors you find.
 # When you FINALLY get the code to run correctly, it will print a code at the end. Use that code to access the Focus Quiz for Bug Hunt #00.  Please do not share the code. 
 
 import random # What's wrong with this line? 
-time # What is missing?
+import time # What is missing?
 
-= random.randint(1, 10) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
+rand_num = random.randint(1, 100) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
 
 player_name = input("What is your name?  Please type your name and press enter.\n")
 printf"Welcome to the Bug Hunt #00 activity {plyr_name}!\n"
