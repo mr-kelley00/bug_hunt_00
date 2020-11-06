@@ -1,4 +1,4 @@
-# Bug Hunt 00 -- <Ryan Kelley> <2:18PM> <11/06/20> v0.1
+# Bug Hunt 00 -- <Ryan Kelley> <2:38PM> <11/06/20> v0.2
 # Your assignment is to read this code carefully and fix any Syntax Errors you find.
 # When you FINALLY get the code to run correctly, it will print a code at the end. Use that code to access the Focus Quiz for Bug Hunt #00.  Please do not share the code. 
 
@@ -8,19 +8,19 @@ import time # What is missing?
 rand_num = random.randint(1, 100) # Generate a random number between 1 and 100. What should you name this variable?  Look at the for loop later in the code. 
 
 player_name = input("What is your name?  Please type your name and press enter.\n")
-printf"Welcome to the Bug Hunt #00 activity {plyr_name}!\n"
-.sleep(2)
+print(f"Welcome to the Bug Hunt #00 activity {player_name}!\n")
+time.sleep(2)
 
 # Declare and initalize x, y, and z. 
 x = -1
 y = 0
 z = 1
 
-f"Right now, x is {x}, y is {y}, and z is {z}.\n"
+print(f"Right now, x is {x}, y is {y}, and z is {z}.\n")
 time.sleep(2)
 
-num_add = int(("What number should I add to x to make it equal to 5?\n")
-x ? num_add # You will need to add num_add to x.  
+num_add = int(input("What number should I add to x to make it equal to 5?\n"))
+x += num_add # You will need to add num_add to x.  
 
 if x != 5:
     Print("Ok, you can do basic addition.  That's good.\n")
