@@ -22,7 +22,7 @@ time.sleep(2)
 num_add = int(input("What number should I add to x to make it equal to 5?\n"))
 x += num_add # You will need to add num_add to x.  
 
-if x != 5:
+if x == 5:
     Print("Ok, you can do basic addition.  That's good.\n")
 else
     while x != 5
